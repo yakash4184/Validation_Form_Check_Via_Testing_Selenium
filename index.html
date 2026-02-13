@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Registration Form</h1>
+
+<form id="regForm">
+
+    <div class="top-error" id="topError"></div>
+
+    <label>First Name *</label>
+    <input type="text" id="firstName">
+    <span class="error" id="firstError"></span>
+
+    <label>Last Name *</label>
+    <input type="text" id="lastName">
+    <span class="error" id="lastError"></span>
+
+    <label>Email *</label>
+    <input type="email" id="email">
+    <span class="error" id="emailError"></span>
+
+    <label>Phone *</label>
+    <input type="text" id="phone">
+    <span class="error" id="phoneError"></span>
+
+    <label>Password *</label>
+    <input type="password" id="password">
+    <small id="strength"></small>
+
+    <label>Confirm Password *</label>
+    <input type="password" id="confirmPassword">
+    <span class="error" id="confirmError"></span>
+
+    <label class="checkbox">
+        <input type="checkbox" id="terms"> Accept Terms & Conditions *
+    </label>
+    <span class="error" id="termsError"></span>
+
+    <br><br>
+    <button type="submit" id="submitBtn" disabled>Register</button>
+
+    <p id="successMsg"></p>
+
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>

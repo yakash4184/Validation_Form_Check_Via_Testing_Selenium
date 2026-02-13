@@ -1,0 +1,122 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 15px;
+}
+
+/* HEADING */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* FORM CONTAINER */
+form {
+    background: #ffffff;
+    max-width: 420px;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* LABEL */
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: 600;
+}
+
+/* INPUT FIELDS */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* CHECKBOX */
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+/* ERROR MESSAGES */
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+.top-error {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* PASSWORD STRENGTH */
+#strength {
+    font-size: 12px;
+    display: block;
+    margin-top: 4px;
+}
+
+/* BUTTON */
+button {
+    margin-top: 20px;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background: gray;
+    cursor: not-allowed;
+}
+
+/* SUCCESS MESSAGE */
+#successMsg {
+    margin-top: 15px;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* 📱 MOBILE RESPONSIVE */
+@media (max-width: 480px) {
+    form {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    input {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
